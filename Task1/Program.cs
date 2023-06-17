@@ -6,8 +6,8 @@ N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 */
 class Program {
     public static void Main(string[] args) {
-        int number = Prompt("Введите число N: ");
-        Console.WriteLine($"Последовательность: {GetStringOfNumbers(number)}");
+        int num = Prompt("Введите число N: ");
+        Console.WriteLine($"Последовательность: {GetStringOfNumbers(num)}");
     }
 
     static int Prompt(string message) {
