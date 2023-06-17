@@ -8,6 +8,10 @@ class Program {
     public static void Main(string[] args) {
         int firstNumber = Prompt("Введите первое число: ");
         int secondNumber = Prompt("Введите второе число: ");
+        if (firstNumber < 0 || secondNumber < 0) {
+            Console.WriteLine("Задавайте только положительные числа либо 0.");
+            return;
+        }
         Console.WriteLine($"Значение функции Аккермана A({firstNumber}, {secondNumber}) = {FunctionAckermann(firstNumber, secondNumber)}");
     }
 
